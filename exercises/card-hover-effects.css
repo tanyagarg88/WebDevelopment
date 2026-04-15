@@ -1,0 +1,15 @@
+.interactive-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.interactive-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+
+<!-- Updated: 2026-04-15T15:44:39+05:30 [Foundation Commit #79] -->

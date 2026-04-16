@@ -1,0 +1,15 @@
+# CSS Selectors and Specificity Hierarchy
+
+## Specificity Weight
+1. Inline styles: `(1, 0, 0, 0)`
+2. IDs: `(0, 1, 0, 0)`
+3. Classes, pseudo-classes, attribute selectors: `(0, 0, 1, 0)`
+4. Elements and pseudo-elements: `(0, 0, 0, 1)`
+
+```css
+/* Specificity: 0,0,2,1 */
+nav.main-nav a.active { color: #3b82f6; font-weight: bold; }
+```
+
+
+<!-- Updated: 2026-04-16T09:45:42+05:30 [Foundation Commit #81] -->

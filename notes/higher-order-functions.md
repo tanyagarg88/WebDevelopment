@@ -1,0 +1,19 @@
+# Higher Order Functions in JavaScript
+
+Higher-order functions take other functions as arguments or return functions.
+
+```js
+const numbers = [10, 20, 30, 40, 50];
+
+// Map
+const doubled = numbers.map(n => n * 2);
+
+// Filter
+const greaterThan25 = numbers.filter(n => n > 25);
+
+// Reduce
+const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+```
+
+
+<!-- Updated: 2026-05-29T15:48:03+05:30 [Commit #71] -->

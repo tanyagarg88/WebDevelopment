@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Palette Generator</title>
+  <style>
+    body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background: #f1f5f9; }
+    .palette { display: flex; gap: 15px; margin-bottom: 20px; }
+    .color-box { width: 100px; height: 140px; border-radius: 8px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 10px; font-weight: bold; color: white; text-shadow: 0 1px 3px rgba(0,0,0,0.5); cursor: pointer; transition: transform 0.2s; }
+    .color-box:hover { transform: scale(1.05); }
+    button { padding: 12px 24px; font-size: 16px; background: #2563eb; color: white; border: none; border-radius: 8px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="palette" id="palette"></div>
+  <button id="generate-btn">Generate New Palette</button>
+  <script>
+    function randomHex() { return '#' + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0'); }
+    function renderPalette() {
+      const p = document.getElementById('palette');
+      p.innerHTML = '';
+      for (let i = 0; i < 5; i++) {
+        const color = randomHex();
+        const box = document.createElement('div');
+        box.className = 'color-box';
+        box.style.backgroundColor = color;
+        box.textContent = color.toUpperCase();
+        box.onclick = () => navigator.clipboard.writeText(color).then(() => alert('Copied ' + color));
+        p.appendChild(box);
+      }
+    }
+    document.getElementById('generate-btn').onclick = renderPalette;
+    renderPalette();
+  </script>
+</body>
+</html>
+
+
+<!-- Updated: 2026-06-14T10:00:50+05:30 [Commit #166] -->

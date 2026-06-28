@@ -1,0 +1,22 @@
+// Weather API Data Fetcher Service
+class WeatherService {
+  constructor(apiKey) {
+    this.apiKey = apiKey;
+    this.baseUrl = 'https://api.open-meteo.com/v1/forecast';
+  }
+
+  async getCurrentWeather(latitude, longitude) {
+    const url = `${this.baseUrl}?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
+    const response = await fetch(url);
+    if (!response.ok) throw new Error('Failed to retrieve forecast data');
+    const data = await response.json();
+    return {
+      temperature: data.current_weather.temperature,
+      windSpeed: data.current_weather.windspeed,
+      time: data.current_weather.time
+    };
+  }
+}
+
+
+<!-- Updated: 2026-06-28T22:18:55+05:30 [Commit #253] -->

@@ -1,0 +1,56 @@
+div{
+    height: 200px;
+    width :500px;
+    background-color: rgb(255, 206, 228);
+    border-width: 5px;
+    border-style: solid;
+    border-color:black;
+    border-top: 5px dashed red;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    transition: 1s;
+    box-shadow: 4px 4px 8px 8px orangered;
+}
+h1{
+    border: 5px dashed green;
+    border-radius: 15px;
+    text-align: center;
+    width: 50%;
+}
+button{
+    border-color: black;
+    border-radius: 5px;
+    background-color: yellow;
+    font-size: 25px;
+}
+span{
+    color: red;
+}
+#inner{
+    background-color: cornflowerblue;
+}
+div:hover{
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+section{
+    background-image: url(https://thumbs.dreamstime.com/b/green-leaves-background-2490839.jpg);
+}
+div3{
+    margin-left: 50px;
+    box-shadow: 4px 4px 8px 8px orangered;
+}
+.card{
+    width: 100px;
+    height:100px;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+}
+img{
+    width:250px;
+    height: 250px;
+}

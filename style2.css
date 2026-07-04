@@ -1,0 +1,96 @@
+/*.face{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.mouth{
+    width: 200px;
+    height:75px;
+    background-color: brown;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    top: 250px;
+    left:100px
+
+}
+.left-eye{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.right-eye{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    display: inline-block;
+    margin-left: 35px;
+}
+.playground{
+    width: 600px;
+    height: 300px;
+    background-color: lightblue;
+    display: grid;
+    grid-template-rows: 100px 80px 20px 500px;
+    grid-template-columns: 100px 100px 100px ;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-items: center;
+    
+}
+.box{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    border:4px solid black;
+    grid-template-columns: 80px 100px 100px ;
+   
+}
+#one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+}
+.two{
+    grid-row-start: 10;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end: 5;}*/
+
+.box{
+    height: 100px;
+    width:300px;
+    background-color: rgb(227, 88, 111);
+    animation-name: fontAnimation;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+   
+
+}
+
+@keyframes fontAnimation{
+    from{
+        font-size: 20px;
+    }
+    to{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 600px){
+    h3{
+        background-color: red;
+    }
+
+    }

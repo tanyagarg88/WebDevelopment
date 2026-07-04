@@ -22,14 +22,17 @@
     position:fixed;
     height:100vh;
     width: 300px;
+    left:-300px;
     background-color:rgb(28, 23, 23);
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
 }
 .sidebar_menu .logo {
     position: absolute;
     width: 100%;
     line-height: 70px;
     box-shadow:0 0 6px rgba(246, 245, 245, 0.5);
+    height: 70px;
 }
 .sidebar_menu .logo a {
     position:absolute;
@@ -39,7 +42,7 @@
     font-size: 25px;
     font-weight: 600;
 }
-.sidebar_menu .btn_two{
+.sidebar_menu .btn_two i{
     position: absolute;
     color:white;
     font-size: 30px;
@@ -84,4 +87,10 @@
 }
 .btn_two:hover{
     font-size: 40px;
+}
+#check:checked ~ .sidebar_menu{
+    left:0;
+}
+#check:checked ~ .btn_one{
+    opacity:0;
 }

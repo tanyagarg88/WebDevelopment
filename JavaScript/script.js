@@ -51,7 +51,6 @@ console.log(5 == "5");
 console.log(5 === "5");
 
 let language = "JavaScript";
-
 console.log("JavaScript");
 console.log("JavaScript".length);
 

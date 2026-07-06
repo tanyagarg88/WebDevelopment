@@ -96,42 +96,11 @@ WebDevelopment
 │   │   ├── photo.jpg
 │   │   └── README.md
 │
-└── JavaScript
+├── JavaScript
+│   │   ├── index.html
+│   │   ├── script.js
+|
 ```
 
----
-
-# 🎯 Current Learning
-
-Currently learning:
-
-- CSS
-- Flexbox
-- Grid
-- Responsive Design
-
-Next:
-
-- JavaScript
-- DOM
-- React
-
----
-
-# 📌 Future Projects
-
-- Responsive Portfolio Website
-- Netflix Clone
-- Spotify Clone
-- Weather App
-- Calculator
-- Landing Page
-- To-Do App
-
----
-
-# ⭐ Connect With Me
-
-**GitHub:** https://github.com/tanyagarg88
 
 If you like my work, feel free to ⭐ this repository!

@@ -50,26 +50,27 @@ console.log(count);
 console.log(5 == "5");
 console.log(5 === "5");
 
+let language = "JavaScript";
 
 console.log("JavaScript");
 console.log("JavaScript".length);
 
-console.log("JavaScript"[0]);
-console.log("JavaScript"[4]);
-console.log("JavaScript"[9]);
+console.log(language[0]);
+console.log(language[4]);
+console.log(language[9]);
 
 let first = "Tanya";
 let last = "Garg";
 
 console.log(first + " " + last);
 
-let college = null;
+let course = null;
 let branch;
 
-console.log(college);
+console.log(course);
 console.log(branch);
 
-console.log(typeof college);
+console.log(typeof course);
 console.log(typeof branch);
 
 let msg = "Hello";

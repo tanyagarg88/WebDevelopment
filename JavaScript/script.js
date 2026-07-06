@@ -49,3 +49,32 @@ console.log(count);
 
 console.log(5 == "5");
 console.log(5 === "5");
+
+
+console.log("JavaScript");
+console.log("JavaScript".length);
+
+console.log("JavaScript"[0]);
+console.log("JavaScript"[4]);
+console.log("JavaScript"[9]);
+
+let first = "Tanya";
+let last = "Garg";
+
+console.log(first + " " + last);
+
+let college = null;
+let branch;
+
+console.log(college);
+console.log(branch);
+
+console.log(typeof college);
+console.log(typeof branch);
+
+let msg = "Hello";
+
+console.log(msg[1]);
+console.log(msg[msg.length - 1]);
+
+console.log("Practice Complete");

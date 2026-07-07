@@ -116,3 +116,57 @@ if (color="yellow"){
 if(color="green"){
     console.log("go");
 }
+
+
+let ageVote=18;
+if (ageVote<=18){
+    console.log("you can vote");
+}else if(ageVote>=33){
+    console.log("ypu cannt vote");
+}
+
+let marksStd=95;
+if(marksStd>=18){
+    console.log("pass");
+    if (marksStd>=80){
+        console.log("Grade:A");
+    }else{
+        console.log("Grade:B");
+    }
+}else{
+    console.log("fail");
+}
+
+let marksTeacher=90;
+if(marksTeacher >= 33 || marksTeacher <=80){
+    console.log("pass");
+    console.log("grade:0");
+}
+let marksTea=90;
+if(marksTea >= 33 && marksTea <=80 || !false){
+    console.log("pass");
+    console.log("grade:0");
+}
+
+if(" "){
+    console.log("string is truthy");
+}else{
+    console.log("String is falsy");
+}
+
+let colorl="orange";
+switch(colorl){
+    case"red":
+    console.log("slow down");
+    break;
+    case"yellow":
+    console.log("ready to go");
+    break;
+    case"green":
+    console.log("goooooo");
+    default:
+    console.log("light is broken");
+}
+alert("So0methihg is wrong!!");
+let Name=prompt("Enter you name");
+console.log(Name);

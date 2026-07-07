@@ -1,172 +1,166 @@
-console.log("JS Practice");
+console.log("JavaScript Basics");
 
-let name = "Tanya";
-let age = 20;
-const college = "ABESIT";
-var city = "Delhi";
+let userName = "Tanya";
+let userAge = 20;
+const institute = "ABESIT";
+var location = "Delhi";
 
-console.log(name);
-console.log(age);
-console.log(college);
-console.log(city);
+console.log(userName);
+console.log(userAge);
+console.log(institute);
+console.log(location);
 
-console.log(typeof name);
-console.log(typeof age);
+console.log(typeof userName);
+console.log(typeof userAge);
 
-let a = 20;
-let b = 5;
+let num1 = 40;
+let num2 = 12;
 
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
-console.log(a % b);
+console.log(num1 + num2);
+console.log(num1 - num2);
+console.log(num1 * num2);
+console.log(num1 / num2);
+console.log(num1 % num2);
+console.log(num1 ** 2);
 
-console.log(10 + 5 * 2);
-console.log((10 + 5) * 2);
+let score = 75;
 
-console.log(0 / 0);
-console.log("abc" * 2);
+score += 15;
+console.log(score);
 
-let marks = 80;
+score -= 20;
+console.log(score);
 
-marks += 10;
-console.log(marks);
+let value = 5;
 
-marks -= 5;
-console.log(marks);
+console.log(value++);
+console.log(value);
+console.log(++value);
+console.log(value--);
+console.log(value);
 
-let count = 1;
-
-count++;
-console.log(count);
-
-++count;
-console.log(count);
-
-count--;
-console.log(count);
-
-console.log(5 == "5");
-console.log(5 === "5");
+console.log(20 == "20");
+console.log(20 === "20");
 
 let language = "JavaScript";
-console.log("JavaScript");
-console.log("JavaScript".length);
 
+console.log(language);
+console.log(language.length);
 console.log(language[0]);
-console.log(language[4]);
+console.log(language[3]);
 console.log(language[9]);
 
-let first = "Tanya";
-let last = "Garg";
+let firstName = "Tanya";
+let lastName = "Garg";
 
-console.log(first + " " + last);
+let fullName = firstName + " " + lastName;
+console.log(fullName);
 
-let course = null;
+let data = null;
 let branch;
 
-console.log(course);
+console.log(data);
 console.log(branch);
 
-console.log(typeof course);
+console.log(typeof data);
 console.log(typeof branch);
 
-let msg = "Hello";
+let greeting = "Welcome";
 
-console.log(msg[1]);
-console.log(msg[msg.length - 1]);
+console.log(greeting[0]);
+console.log(greeting[4]);
+console.log(greeting[greeting.length - 1]);
 
-console.log("Practice Complete");
-let x= 25;
-let y=85;
-console.log("sum is : ",x+y);
-let s=2;
-let g=10;
-console.log(s+g);
-console.log(s-g);
-console.log(s*g);
-console.log(s/g);
-console.log(s**g);
-console.log(s%g);
-console.log(s++);
-console.log(++s);
-console.log(s+=g);
+let x = 15;
+let y = 25;
 
-age=18;
-console.log(age<18);
- 
-console.log('p'<'P');
-console.log('A'>'b');
+console.log("Sum =", x + y);
+console.log("Difference =", y - x);
+console.log("Product =", x * y);
+console.log("Division =", y / x);
 
-console.log("before my if statement");
-let newAge=23;
-if (newAge>=18){
-    console.log("you can vote");
-}
-console.log("after my if statement");
+console.log(userAge >= 18);
+console.log(userAge < 18);
 
-let color="green";
-if(color="red"){
-    console.log("stop");
-}
-if (color="yellow"){
-    console.log("ready");
-}
-if(color="green"){
-    console.log("go");
+console.log("A" < "B");
+console.log("z" > "m");
+
+console.log("Before If Statement");
+
+let age = 22;
+
+if (age >= 18) {
+    console.log("Eligible to Vote");
 }
 
+console.log("After If Statement");
 
-let ageVote=18;
-if (ageVote<=18){
-    console.log("you can vote");
-}else if(ageVote>=33){
-    console.log("ypu cannt vote");
+let signal = "yellow";
+
+if (signal == "red") {
+    console.log("Stop");
+} else if (signal == "yellow") {
+    console.log("Ready");
+} else {
+    console.log("Go");
 }
 
-let marksStd=95;
-if(marksStd>=18){
-    console.log("pass");
-    if (marksStd>=80){
-        console.log("Grade:A");
-    }else{
-        console.log("Grade:B");
+let marks = 88;
+
+if (marks >= 33) {
+    console.log("Pass");
+
+    if (marks >= 80) {
+        console.log("Grade A");
+    } else {
+        console.log("Grade B");
     }
-}else{
-    console.log("fail");
+} else {
+    console.log("Fail");
 }
 
-let marksTeacher=90;
-if(marksTeacher >= 33 || marksTeacher <=80){
-    console.log("pass");
-    console.log("grade:0");
-}
-let marksTea=90;
-if(marksTea >= 33 && marksTea <=80 || !false){
-    console.log("pass");
-    console.log("grade:0");
+let attendance = 82;
+
+if (attendance >= 75 && marks >= 33) {
+    console.log("Allowed in Exam");
 }
 
-if(" "){
-    console.log("string is truthy");
-}else{
-    console.log("String is falsy");
+if (attendance >= 75 || marks >= 90) {
+    console.log("Good Performance");
 }
 
-let colorl="orange";
-switch(colorl){
-    case"red":
-    console.log("slow down");
-    break;
-    case"yellow":
-    console.log("ready to go");
-    break;
-    case"green":
-    console.log("goooooo");
+if (!false) {
+    console.log("Boolean Check");
+}
+
+let text = "";
+
+if (text) {
+    console.log("Truthy Value");
+} else {
+    console.log("Falsy Value");
+}
+
+let day = "Sunday";
+
+switch (day) {
+    case "Monday":
+        console.log("Start Working");
+        break;
+
+    case "Saturday":
+        console.log("Weekend");
+        break;
+
+    case "Sunday":
+        console.log("Holiday");
+        break;
+
     default:
-    console.log("light is broken");
+        console.log("Normal Day");
 }
-alert("So0methihg is wrong!!");
-let Name=prompt("Enter you name");
-console.log(Name);
+
+alert("Welcome to JavaScript Practice");
+
+let input = prompt("Enter your favourite language");
+console.log("Favourite Language:", input);

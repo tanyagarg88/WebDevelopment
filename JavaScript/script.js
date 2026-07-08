@@ -156,3 +156,17 @@ let user = prompt("Enter your name");
 console.log("Hello " + user);
 
 console.log("hellooo");
+
+let mess=" hello   ";
+let newmess=mess.trim();
+console.log(newmess);
+console.log(mess.toUpperCase());
+
+let str="i love india";
+console.log(str.indexOf("love"));
+console.log(str.indexOf("live"));
+
+let Message="Tanyagarg";
+let newMessage=message.trim().toUpperCase();
+console.log(newMessage);
+console.log(Message.slice(-3));

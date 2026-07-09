@@ -194,3 +194,84 @@ console.log(monuments.reverse());
 let colorbar=["red","yellow","orange","green","white"];
 console.log(colorbar.slice());
 console.log(colorbar.slice(1,3));
+console.log(colorbar.splice(3));
+console.log(colorbar.splice(1,0,"grey","puple"));
+console.log(colorbar);
+console.log(colorbar.sort());
+
+let numbersystem=[[2,4],[6,8],[10,12]];
+console.log(numbersystem);
+console.log(numbersystem.length);
+console.log(numbersystem[1][1]);
+
+
+
+let countries = ["India", "Canada", "Japan", "Australia", "Germany"];
+
+console.log(countries);
+
+countries.push("France");
+console.log(countries);
+
+countries.pop();
+console.log(countries);
+
+countries.unshift("Nepal");
+console.log(countries);
+
+countries.shift();
+console.log(countries);
+
+console.log(countries.includes("India"));
+console.log(countries.indexOf("Japan"));
+
+let asianCountries = countries.slice(0, 2);
+console.log(asianCountries);
+
+countries.splice(2, 1, "Brazil");
+console.log(countries);
+
+let moreCountries = ["USA", "Italy"];
+let allCountries = countries.concat(moreCountries);
+console.log(allCountries);
+
+allCountries.reverse();
+console.log(allCountries);
+
+allCountries.sort();
+console.log(allCountries);
+
+for (let country of allCountries) {
+    console.log(country);
+}
+
+console.log("Nested Array Practice");
+
+let ticTacToe = [
+    ["X", "O", "X"],
+    ["O", "X", "O"],
+    ["O", "X", "X"]
+];
+
+console.log(ticTacToe);
+
+console.log(ticTacToe[0]);
+console.log(ticTacToe[1]);
+console.log(ticTacToe[2]);
+
+console.log(ticTacToe[0][0]);
+console.log(ticTacToe[1][1]);
+console.log(ticTacToe[2][2]);
+
+ticTacToe[1][2] = "X";
+console.log(ticTacToe);
+
+for (let row of ticTacToe) {
+    console.log(row);
+}
+
+for (let i = 0; i < ticTacToe.length; i++) {
+    for (let j = 0; j < ticTacToe[i].length; j++) {
+        console.log("Row:", i, "Column:", j, "Value:", ticTacToe[i][j]);
+    }
+}

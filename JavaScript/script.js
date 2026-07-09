@@ -170,3 +170,20 @@ let Message="Tanyagarg";
 let newMessage=message.trim().toUpperCase();
 console.log(newMessage);
 console.log(Message.slice(-3));
+console.log(Message.replace("Tanya","hhih"));
+console.log(Message.repeat(10));
+
+let students=["tanya","aditi","manvi","uttkarsh"];
+console.log(students);
+console.log(students.length);
+
+
+let cars=["audi","BMw"];
+console.log(cars.push("toyota"));
+console.log(cars.pop());
+console.log(cars.unshift("ferrari"));
+console.group(cars.shift());
+
+let monuments=["redfort","tajmahal","killa"];
+console.log(monuments.indexOf("tajmahal"));
+console.log(monuments.includes("rajasthan"));

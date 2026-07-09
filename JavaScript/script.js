@@ -275,3 +275,7 @@ for (let i = 0; i < ticTacToe.length; i++) {
         console.log("Row:", i, "Column:", j, "Value:", ticTacToe[i][j]);
     }
 }
+
+for(let j=1;j<=10;j++){
+    console.log(j);
+}

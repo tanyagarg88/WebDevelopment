@@ -185,5 +185,12 @@ console.log(cars.unshift("ferrari"));
 console.group(cars.shift());
 
 let monuments=["redfort","tajmahal","killa"];
+let Beaches=["goa","bali"];
 console.log(monuments.indexOf("tajmahal"));
 console.log(monuments.includes("rajasthan"));
+console.log(monuments.concat(Beaches));
+console.log(monuments.reverse());
+
+let colorbar=["red","yellow","orange","green","white"];
+console.log(colorbar.slice());
+console.log(colorbar.slice(1,3));

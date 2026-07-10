@@ -490,4 +490,10 @@ for (let group of continentCountries) {
     }
 }
 
- 
+let clothes=["suit","saare","thsirt"];
+for(clothe of clothes){
+    console.log(clothe);
+}
+for(char of "tanyagarg"){
+    console.log(char);
+}

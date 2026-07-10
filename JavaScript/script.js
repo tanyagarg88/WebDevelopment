@@ -414,3 +414,39 @@ for (let person = 0; person < employees.length; person++) {
 }
 
 console.log("Practice Finished");
+
+let g=0;
+ while(g<=10){
+    console.log(g)
+    g++;
+ }
+
+let movies = [
+    "3 Idiots",
+    "Pushpa",
+    "Interstellar",
+    "Dangal",
+    "Kantara"
+];
+
+for (let movie of movies) {
+    if (movie === "Interstellar") {
+        console.log(movie + " is my favourite movie");
+    } else {
+        console.log(movie);
+    }
+}
+let heroes = [
+    ["Iron Man", "Superman", "Wonder Woman"],
+    ["Superwoman", "Spider-Man"]
+];
+
+for (let l = 0; l < heroes.length; l++) {
+    console.log("Group", l + 1, heroes[l]);
+
+    for (let h = 0; h < heroes[l].length; h++) {
+        console.log(`Hero ${h + 1}: ${heroes[l][h]}`);
+    }
+}
+
+ 

@@ -301,3 +301,116 @@ n=parseInt(n);
 for(j=n;j<=n*10;j=j+n){
     console.log(j);
 }
+
+console.log("Loop Practice");
+
+for (let number = 1; number <= 10; number++) {
+    console.log(number);
+}
+
+console.log("Even Values");
+
+for (let even = 2; even <= 20; even += 2) {
+    console.log(even);
+}
+
+console.log("Odd Values");
+
+for (let odd = 1; odd <= 19; odd += 2) {
+    console.log(odd);
+}
+
+console.log("Table of 9");
+
+for (let multiplier = 1; multiplier <= 10; multiplier++) {
+    console.log("9 x " + multiplier + " = " + (9 * multiplier));
+}
+
+console.log("Cities");
+
+let cities = ["Delhi", "Mumbai", "Jaipur", "Pune", "Lucknow"];
+
+for (let index = 0; index < cities.length; index++) {
+    console.log(cities[index]);
+}
+
+console.log("Using For Of");
+
+for (let place of cities) {
+    console.log(place);
+}
+
+console.log("Nested Loop");
+
+for (let floor = 1; floor <= 3; floor++) {
+    console.log("Floor " + floor);
+
+    for (let room = 1; room <= 4; room++) {
+        console.log("Room " + room);
+    }
+}
+
+console.log("Pattern");
+
+for (let row = 1; row <= 5; row++) {
+    let pattern = "";
+
+    for (let star = 1; star <= row; star++) {
+        pattern += "*";
+    }
+
+    console.log(pattern);
+}
+
+console.log("While Loop");
+
+let step = 1;
+
+while (step <= 5) {
+    console.log(step);
+    step++;
+}
+
+console.log("Reverse Counting");
+
+let reverse = 5;
+
+while (reverse >= 1) {
+    console.log(reverse);
+    reverse--;
+}
+
+console.log("Do While");
+
+let attempt = 1;
+
+do {
+    console.log(attempt);
+    attempt++;
+} while (attempt <= 5);
+
+console.log("Tables");
+
+for (let table = 2; table <= 5; table++) {
+
+    for (let value = 1; value <= 10; value++) {
+        console.log(table + " x " + value + " = " + (table * value));
+    }
+
+    console.log("----------------");
+}
+
+console.log("Nested Array");
+
+let employees = [
+    ["Aman", 23],
+    ["Priya", 22],
+    ["Rohit", 24]
+];
+
+for (let person = 0; person < employees.length; person++) {
+    console.log("Name:", employees[person][0]);
+    console.log("Age:", employees[person][1]);
+}
+
+console.log("Practice Finished");

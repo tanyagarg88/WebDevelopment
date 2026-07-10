@@ -279,3 +279,25 @@ for (let i = 0; i < ticTacToe.length; i++) {
 for(let j=1;j<=10;j++){
     console.log(j);
 }
+
+for (let k=1;k<=15;k=k+2){
+    console.log(k);
+}
+
+console.log("backward");
+
+for (let x=15;x>=1;x=x-2){
+    console.log(x)
+}
+
+console.log("tables");
+
+for (let t=5;t<=50;t=t+5){
+    console.log(t);
+
+}
+let n=prompt("write any number for table");
+n=parseInt(n);
+for(j=n;j<=n*10;j=j+n){
+    console.log(j);
+}

@@ -448,5 +448,46 @@ for (let l = 0; l < heroes.length; l++) {
         console.log(`Hero ${h + 1}: ${heroes[l][h]}`);
     }
 }
+console.log("CountriesLoop practice");
+
+let countriesLoop= ["India", "Japan", "Canada", "Australia", "Germany"];
+
+console.log("Using For Loop");
+
+for (let i = 0; i < countriesLoop.length; i++) {
+    console.log(countriesLoop[i]);
+}
+
+console.log("Using For Of Loop");
+
+for (let country of countriesLoop) {
+    console.log(country);
+}
+
+console.log("Nested Array with For Loop");
+
+let continentCountries = [
+    ["India", "China", "Japan"],
+    ["France", "Germany", "Italy"],
+    ["USA", "Canada", "Mexico"]
+];
+
+for (let i = 0; i < continentCountries.length; i++) {
+    console.log("Group", i + 1);
+
+    for (let j = 0; j < continentCountries[i].length; j++) {
+        console.log(continentCountries[i][j]);
+    }
+}
+
+console.log("Nested For Of Loop");
+
+for (let group of continentCountries) {
+    console.log("Countries");
+
+    for (let country of group) {
+        console.log(country);
+    }
+}
 
  

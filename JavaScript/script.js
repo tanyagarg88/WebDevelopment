@@ -497,3 +497,25 @@ for(clothe of clothes){
 for(char of "tanyagarg"){
     console.log(char);
 }
+
+const std ={
+    name:"tanya",
+    age:21,
+    marks:91
+};
+
+const classInfo=
+{
+    aman:{
+        city:"pune",
+        grade:"A+",
+    },
+    harsh:{
+        city:"shamli",
+        grade:"B",
+    },
+    Tanya:{
+        city:"lucknow",
+        grade:"A",
+    }
+};

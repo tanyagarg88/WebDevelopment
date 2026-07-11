@@ -569,3 +569,77 @@ let randomAge = Math.floor(Math.random() * 43) + 18;
 console.log("Random Age:", randomAge);
 
 console.log("Math Practice Completed");
+
+
+function helloyy(){
+    console.log("helloyy");
+}
+helloyy();
+
+function printPoem() {
+    console.log("Twinkle, twinkle, little star,");
+    console.log("How I wonder what you are!");
+    console.log("Up above the world so high,");
+    console.log("Like a diamond in the sky.");
+}
+
+printPoem();
+
+function rollDice() {
+    let dice = Math.floor(Math.random() * 6) + 1;
+    console.log("Dice Value:", dice);
+}
+
+rollDice();
+rollDice();
+rollDice();
+
+
+function printNme(name){
+    console.log(name);
+}
+printNme("tanyaa");
+
+function sayHello(userName) {
+    console.log("Hello " + userName);
+}
+
+sayHello("Tanya");
+sayHello("Rahul");
+
+function sumission(a,b){
+    console.log(a+b);
+}
+sumission(1,2);
+sumission(4,50);
+sumission(9,60);
+sumission(7,8);
+sumission(3,2);
+
+function isAdult(age){
+    if(age<18){
+        return "adult";
+    }else{
+        return "not adult";
+    }
+}
+isAdult(41);
+
+
+function checkNumber(number) {
+    if (number % 2 === 0) {
+        console.log(number + " is Even");
+    } else {
+        console.log(number + " is Odd");
+    }
+}
+
+checkNumber(12);
+checkNumber(19);
+
+function favouriteMovie(movieName) {
+    console.log("My favourite movie is " + movieName);
+}
+
+favouriteMovie("3 Idiots");
+favouriteMovie("Interstellar");

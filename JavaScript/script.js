@@ -643,3 +643,17 @@ function favouriteMovie(movieName) {
 
 favouriteMovie("3 Idiots");
 favouriteMovie("Interstellar");
+
+let summ=function(a,b){
+    return a+b;
+}
+
+function multiplegreet(funct,count){
+    for(let i=1;i<=count;i++){
+        funct();
+    }
+}
+let greet = function(){
+    console.log("greetings");
+}
+multiplegreet(greet,5);

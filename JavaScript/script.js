@@ -657,3 +657,100 @@ let greet = function(){
     console.log("greetings");
 }
 multiplegreet(greet,5);
+
+let collegeCity = "Ghaziabad";
+
+if (true) {
+    let classroom = "CSE-2";
+    console.log(classroom);
+}
+
+console.log(collegeCity);
+
+console.log("Lexical Scope");
+
+let teacher = "Ankit Sir";
+
+function classRoom() {
+
+    let subject = "JavaScript";
+
+    function attendance() {
+        console.log(teacher);
+        console.log(subject);
+    }
+
+    attendance();
+}
+
+classRoom();
+
+function calculateBill(price, quantity) {
+    let totalBill = price * quantity;
+    console.log("Total Bill =", totalBill);
+}
+
+calculateBill(250, 4);
+calculateBill(120, 2);
+
+let sayWelcome = function () {
+    console.log("Welcome to JavaScript Practice");
+};
+
+sayWelcome();
+
+function repeatMessage(action, count) {
+
+    for (let step = 1; step <= count; step++) {
+        action();
+    }
+
+}
+
+function greetFriend() {
+    console.log("Good Morning");
+}
+
+repeatMessage(greetFriend, 3);
+
+console.log("Higher Order Function Return");
+
+function calculator(choice) {
+
+    if (choice === "square") {
+
+        return function (value) {
+            console.log(value * value);
+        };
+
+    }
+
+    return function (value) {
+        console.log(value * value * value);
+    };
+
+}
+
+let squareValue = calculator("square");
+squareValue(8);
+
+let cubeValue = calculator("cube");
+cubeValue(4);console.log("Methods");
+
+let employee = {
+
+    employeeName: "Tanya",
+    department: "Development",
+
+    introduce() {
+        console.log("Hello, I am " + this.employeeName);
+    },
+
+    showDepartment() {
+        console.log("Department:", this.department);
+    }
+
+};
+
+employee.introduce();
+employee.showDepartment();

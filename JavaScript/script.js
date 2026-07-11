@@ -519,3 +519,53 @@ const classInfo=
         grade:"A",
     }
 };
+console.log("Math Practice");
+
+let numberMaths = 25.78;
+
+console.log(Math.round(numberMaths));
+console.log(Math.floor(numberMaths));
+console.log(Math.ceil(numberMaths));
+console.log(Math.abs(-45));
+console.log(Math.pow(3, 4));
+console.log(Math.sqrt(81));
+console.log(Math.max(12, 45, 78, 23));
+console.log(Math.min(12, 45, 78, 23));
+
+console.log(Math.PI);
+console.log(Math.E);
+
+let randomValue = Math.random();
+
+console.log(randomValue);
+
+console.log(Math.floor(randomValue * 10));
+console.log(Math.floor(randomValue * 100));
+
+let dice = Math.floor(Math.random() * 6) + 1;
+console.log("Dice:", dice);
+
+let otp = Math.floor(Math.random() * 9000) + 1000;
+console.log("OTP:", otp);
+
+let luckyNumber = Math.floor(Math.random() * 50) + 1;
+console.log("Lucky Number:", luckyNumber);
+
+let temperature = -18;
+console.log(Math.abs(temperature));
+
+let decimal = 19.95;
+
+console.log(Math.floor(decimal));
+console.log(Math.ceil(decimal));
+console.log(Math.round(decimal));
+
+let markMth = [65, 82, 91, 74, 88];
+
+console.log(Math.max(...markMth));
+console.log(Math.min(...markMth));
+
+let randomAge = Math.floor(Math.random() * 43) + 18;
+console.log("Random Age:", randomAge);
+
+console.log("Math Practice Completed");

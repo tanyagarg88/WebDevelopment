@@ -754,3 +754,66 @@ let employee = {
 
 employee.introduce();
 employee.showDepartment();
+
+const Studnt={
+    name:"tanvi",
+    age:6,
+    maths:45,
+    eng:67,
+    getAvg(){
+        console.log(this);
+        let avg =(maths+eng)/2;
+        console.log(avg);
+    }
+}
+
+console.log("This Keyword");
+
+let employeeInfo = {
+
+    employeeName: "Tanya",
+    employeeRole: "Frontend Developer",
+
+    introduce() {
+        console.log("Name:", this.employeeName);
+        console.log("Role:", this.employeeRole);
+    },
+
+    updateRole(newRole) {
+        this.employeeRole = newRole;
+        console.log("Updated Role:", this.employeeRole);
+    }
+
+};
+
+employeeInfo.introduce();
+
+employeeInfo.updateRole("Flutter Developer");
+
+employeeInfo.introduce();
+
+console.log("Try Catch Example");
+
+try {
+    console.log(studentName);
+} catch (error) {
+    console.log("Variable not found");
+}
+
+console.log("Division Example");
+
+try {
+    let firstValue = 100;
+    let secondValue = 0;
+
+    if (secondValue === 0) {
+        throw "Division by zero is not allowed";
+    }
+
+    console.log(firstValue / secondValue);
+
+} catch (error) {
+    console.log(error);
+}
+
+console.log("Calculation Finished");

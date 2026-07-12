@@ -817,3 +817,89 @@ try {
 }
 
 console.log("Calculation Finished");
+
+const sub =(a,b)=>{
+    console.log(a+b);
+};
+
+console.log("hii there");
+setTimeout( ()=> {
+    console.log("Apna adda");
+},2000);
+console.log("welcome to");
+
+console.log("Arrow Function");
+
+const showGreeting = () => {
+    console.log("Welcome to JavaScript");
+};
+
+showGreeting();
+
+const multiplyNumbers = (firstValue, secondValue) => {
+    console.log(firstValue * secondValue);
+};
+
+multiplyNumbers(8, 6);
+
+console.log("Implicit Return");
+
+const findSquare = numberValue => numberValue * numberValue;
+
+console.log(findSquare(9));
+
+const welcomeUser = userValue => "Hello " + userValue;
+
+console.log(welcomeUser("Tanya"));
+
+console.log("setTimeout Example");
+
+setTimeout(() => {
+    console.log("This message appears after 3 seconds");
+}, 3000);
+
+console.log("Waiting...");
+
+console.log("setInterval Example");
+
+let timerCount = 1;
+
+let timer = setInterval(() => {
+    console.log("Timer:", timerCount);
+    timerCount++;
+
+    if (timerCount > 5) {
+        clearInterval(timer);
+    }
+
+}, 1000);
+
+console.log("This with Arrow Function");
+
+let profileInfo = {
+
+    fullName: "Tanya",
+
+    normalFunction() {
+        console.log("Normal:", this.fullName);
+    },
+
+    arrowFunction() {
+        setTimeout(() => {
+            console.log("Arrow:", this.fullName);
+        }, 1000);
+    }
+
+};
+
+profileInfo.normalFunction();
+profileInfo.arrowFunction();
+
+console.log("Student Marks");
+
+const calculateAverage = (markOne, markTwo, markThree) => {
+    let averageMarks = (markOne + markTwo + markThree) / 3;
+    console.log("Average:", averageMarks);
+};
+
+calculateAverage(85, 92, 78);

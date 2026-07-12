@@ -1,107 +1,240 @@
 # 🚀 Web Development Journey
 
-> A collection of my web development projects and practice exercises while learning HTML, CSS, and JavaScript.
+> A collection of my web development projects, practice exercises, and mini-projects while learning HTML, CSS, Bootstrap, and JavaScript.
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/tanyagarg88/WebDevelopment)
 ![GitHub repo size](https://img.shields.io/github/repo-size/tanyagarg88/WebDevelopment)
+![GitHub stars](https://img.shields.io/github/stars/tanyagarg88/WebDevelopment?style=social)
+![GitHub forks](https://img.shields.io/github/forks/tanyagarg88/WebDevelopment?style=social)
 ![Status](https://img.shields.io/badge/Status-Learning-success)
 
 ---
 
-## 👩‍💻 About
+# 👩‍💻 About Me
 
-Hi! I'm **Tanya Garg**, a Computer Science student passionate about **Frontend Development** and **Flutter App Development**.
+Hi, I'm **Tanya Garg**, a Computer Science Engineering student passionate about **Frontend Development**, **Flutter**, and creating modern web applications.
 
-This repository documents my progress as I learn modern web development. Every project here is built while following tutorials, practicing concepts, and experimenting on my own.
+This repository is my personal learning journal where I practice web development concepts, build mini projects, and improve my problem-solving skills through hands-on coding.
 
-My goal is to build a strong foundation in:
+I'm currently learning:
 
 - HTML5
 - CSS3
-- JavaScript
-- Responsive Web Design
-- React.js (Upcoming)
+- Bootstrap 5
+- JavaScript (ES6+)
+
+Upcoming:
+
+- React.js
+- Node.js
+- Express.js
+- MongoDB
 
 ---
 
 # 📚 Learning Progress
 
-## HTML ✅
+## ✅ HTML
+
 - Semantic HTML
 - Forms
 - Tables
 - Lists
-- Media Elements
+- Audio & Video
+- Images
+- Hyperlinks
 
-## CSS 🔄
+---
+
+## ✅ CSS
+
 - Selectors
 - Colors
 - Typography
 - Google Fonts
-- Font Awesome Icons
+- Font Awesome
+- Box Model
 - Positioning
-- Sidebar Menu
-- Hover Effects
-- Checkbox Hack
+- Display Properties
+- Flexbox
+- Responsive Layout
+- Sidebar Navigation
+- Animations
 - Transitions
-- Animations (Upcoming)
-- Flexbox (Upcoming)
-- Grid (Upcoming)
+- Hover Effects
 
-## JavaScript ⏳
+---
+
+## ✅ Bootstrap
+
+- Containers
+- Grid System
+- Buttons
+- Cards
+- Alerts
+- Navbar
+- Forms
+- Carousel
+- Utilities
+- Responsive Components
+
+---
+
+## ✅ JavaScript
+
 - Variables
-- Functions
+- Data Types
+- Operators
+- Strings
 - Arrays
 - Objects
-- DOM Manipulation
+- Loops
+- Functions
+- Arrow Functions
+- Scope
+- Lexical Scope
+- Higher Order Functions
+- Methods
+- Objects & this Keyword
+- Math Object
+- Random Numbers
+- try...catch
+- Timers
+- Todo App
+- Guessing Game
 
 ---
 
 # 📂 Projects
 
-## 📷 Sidebar Menu Project
+## 🎵 Spotify Clone
 
-A modern sidebar navigation built using only HTML and CSS.
+A Spotify-inspired web interface built using HTML and CSS.
 
 ### Features
 
-- Responsive Sidebar
+- Sidebar Navigation
+- Music Cards
+- Responsive Layout
+- Fixed Music Player
+- Dark Theme
+
+---
+
+## 📋 JavaScript Todo App
+
+A simple console-based Todo application.
+
+### Features
+
+- Add Tasks
+- Delete Tasks
+- Display Tasks
+- Quit Application
+
+---
+
+## 🎲 Guessing Game
+
+A simple JavaScript number guessing game using loops and conditions.
+
+### Features
+
+- Random Number Generation
+- User Input
+- Win/Lose Conditions
+
+---
+
+## 📖 Sidebar Menu Project
+
+A responsive sidebar built using HTML and CSS.
+
+### Features
+
+- Sidebar Navigation
 - Font Awesome Icons
 - Google Fonts
 - Hover Effects
-- Background Image
-- CSS Positioning
-- Checkbox Toggle
+- Responsive Layout
 
-### Technologies Used
+---
+
+## 🧩 Bootstrap Components Showcase
+
+Practice project demonstrating Bootstrap components.
+
+### Includes
+
+- Buttons
+- Cards
+- Alerts
+- Forms
+- Navbar
+- Grid System
+- Utilities
+
+---
+
+# 🛠 Technologies Used
 
 - HTML5
 - CSS3
-- Font Awesome
+- Bootstrap 5
+- JavaScript (ES6)
 - Google Fonts
+- Font Awesome
+- Git
+- GitHub
+- VS Code
 
 ---
 
 # 📁 Repository Structure
 
-```
+```text
 WebDevelopment
 │
-├── HTML
-│
-├── CSS
-│   ├── Sidebar Menu Project
-│   │   ├── index.html
-│   │   ├── style.css
-│   │   ├── photo.jpg
-│   │   └── README.md
+├── Bootstrap
+│   └── Bootstrap Components Showcase
 │
 ├── JavaScript
-│   │   ├── index.html
-│   │   ├── script.js
-|   |   ├── todoapp.js
-│   │   ├── guessinggame.js
+│   ├── index.html
+│   ├── script.js
+│   ├── todoapp.js
+│   ├── guessinggame.js
+│
+├── miniproject css
+│
+├── spotify
+│   ├── assets
+│   ├── index.html
+│   └── style.css
+│
+├── starter js
+│   ├── app.js
+│   ├── index.html
+│   └── style.css
+│
+├── README.md
+│
+├── index.html
+├── index1.html
+├── index2.html
+├── style.css
+├── style1.css
+└── style2.css
 ```
 
+# 🤝 Connect With Me
 
-If you like my work, feel free to ⭐ this repository!
+- GitHub: **github.com/tanyagarg88**
+- LinkedIn: **www.linkedin.com/in/tanya-garg-502845278**
+
+---
+
+## ⭐ Support
+
+If you found this repository helpful or like my learning journey, feel free to **Star ⭐ this repository**.
+
+Happy Coding! 🚀

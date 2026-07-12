@@ -903,3 +903,18 @@ const calculateAverage = (markOne, markTwo, markThree) => {
 };
 
 calculateAverage(85, 92, 78);
+
+console.log("Eligibility Check");
+
+const checkEligibility = personAge => {
+
+    if (personAge >= 18) {
+        console.log("Eligible to Vote");
+    } else {
+        console.log("Not Eligible");
+    }
+
+};
+
+checkEligibility(21);
+checkEligibility(15);

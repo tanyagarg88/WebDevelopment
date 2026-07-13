@@ -918,3 +918,70 @@ const checkEligibility = personAge => {
 
 checkEligibility(21);
 checkEligibility(15);
+
+console.log("Select by ID");
+
+let headingElement = document.getElementById("heading");
+
+console.log(headingElement);
+console.dir(headingElement);
+
+console.log("Select by Class");
+
+let cardItems = document.getElementsByClassName("card");
+
+console.log(cardItems);
+console.log(cardItems.length);
+
+console.log("Select by Tag");
+
+let paragraphList = document.getElementsByTagName("p");
+
+console.log(paragraphList);
+
+for (let paragraph of paragraphList) {
+    console.log(paragraph);
+}
+
+console.log("Query Selector");
+
+let firstButton = document.querySelector("button");
+
+console.log(firstButton);
+
+console.log("Query Class");
+
+let firstCard = document.querySelector(".card");
+
+console.log(firstCard);
+
+console.log("Query Selector All");
+
+let allImages = document.querySelectorAll("img");
+
+console.log(allImages);
+
+for (let imageItem of allImages) {
+    console.log(imageItem);
+}
+
+console.log("Links");
+
+let navigationLinks = document.querySelectorAll("a");
+
+for (let singleLink of navigationLinks) {
+    console.log(singleLink);
+}
+
+console.log("DOM Practice");
+
+let pageTitle = document.querySelector("h1");
+let firstParagraph = document.querySelector("p");
+let allButtons = document.querySelectorAll("button");
+
+console.log(pageTitle);
+console.log(firstParagraph);
+
+allButtons.forEach(buttonItem => {
+    console.log(buttonItem);
+});

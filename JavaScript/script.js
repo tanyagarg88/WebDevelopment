@@ -1021,3 +1021,52 @@ imageBox.style.width = "250px";
 imageBox.style.height = "250px";
 imageBox.style.borderRadius = "15px";
 imageBox.style.border = "4px solid purple";
+
+console.log("ClassList Practice");
+
+let headingBox = document.querySelector("h1");
+
+headingBox.classList.add("highlight");
+console.log(headingBox.classList);
+
+headingBox.classList.remove("highlight");
+console.log(headingBox.classList);
+
+headingBox.classList.add("title");
+
+console.log(headingBox.classList.contains("title"));
+
+headingBox.classList.toggle("active");
+console.log(headingBox.classList);
+
+headingBox.classList.toggle("active");
+console.log(headingBox.classList);
+
+console.log("Button Class");
+
+let submitButton = document.querySelector("button");
+
+submitButton.classList.add("btn");
+submitButton.classList.add("success");
+
+console.log(submitButton.classList);
+
+submitButton.classList.remove("success");
+
+console.log(submitButton.classList);
+
+console.log("DOM Navigation");
+
+let pageHeading = document.querySelector("h1");
+
+console.log(pageHeading.parentElement);
+
+console.log(pageHeading.nextElementSibling);
+
+let pageBody = document.querySelector("body");
+
+console.log(pageBody.firstElementChild);
+
+console.log(pageBody.lastElementChild);
+
+console.log(pageBody.children);

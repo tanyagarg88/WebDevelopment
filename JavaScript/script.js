@@ -1096,3 +1096,32 @@ titleText.innerText = "Frontend Development";
 let heading = document.querySelector("h1");
 
 heading.before(titleText);
+
+
+console.log("Remove Button");
+
+let removeButton = document.querySelector("button");
+
+removeButton.remove();
+
+console.log("Remove List Item");
+
+let removeItem = document.querySelector("li");
+
+removeItem.remove();
+
+console.log("DOM Practice");
+
+let newHeading = document.createElement("h2");
+newHeading.innerText = "DOM Practice";
+document.body.append(newHeading);
+
+let newButton = document.createElement("button");
+newButton.innerText = "Submit";
+document.body.append(newButton);
+
+let newParagraph = document.createElement("p");
+newParagraph.innerText = "Learning DOM is interesting.";
+document.body.append(newParagraph);
+
+newParagraph.remove();

@@ -1070,3 +1070,29 @@ console.log(pageBody.firstElementChild);
 console.log(pageBody.lastElementChild);
 
 console.log(pageBody.children);
+
+console.log("Create Heading");
+
+let headingOne = document.createElement("h2");
+
+headingOne.innerText = "Learning JavaScript DOM";
+
+document.body.append(headingOne);
+
+console.log("Create Paragraph");
+
+let paragraphOne = document.createElement("p");
+
+paragraphOne.innerText = "DOM Manipulation Practice";
+
+document.body.append(paragraphOne);
+
+console.log("Before Example");
+
+let titleText = document.createElement("h3");
+
+titleText.innerText = "Frontend Development";
+
+let heading = document.querySelector("h1");
+
+heading.before(titleText);

@@ -985,3 +985,39 @@ console.log(firstParagraph);
 allButtons.forEach(buttonItem => {
     console.log(buttonItem);
 });
+
+console.log("Style Property Practice");
+
+let titleElement = document.querySelector("h1");
+
+titleElement.style.color = "blue";
+titleElement.style.backgroundColor = "lightyellow";
+titleElement.style.textAlign = "center";
+titleElement.style.fontSize = "40px";
+titleElement.style.border = "2px solid black";
+titleElement.style.padding = "10px";
+
+let firstParagraph = document.querySelector("p");
+
+firstParagraph.style.color = "green";
+firstParagraph.style.fontWeight = "bold";
+firstParagraph.style.fontSize = "20px";
+
+let actionButton = document.querySelector("button");
+
+actionButton.style.backgroundColor = "black";
+actionButton.style.color = "white";
+actionButton.style.padding = "10px 20px";
+actionButton.style.borderRadius = "8px";
+actionButton.style.cursor = "pointer";
+
+let pageBody = document.querySelector("body");
+
+pageBody.style.backgroundColor = "#f5f5f5";
+
+console.log("Style Updated");let imageBox = document.querySelector("img");
+
+imageBox.style.width = "250px";
+imageBox.style.height = "250px";
+imageBox.style.borderRadius = "15px";
+imageBox.style.border = "4px solid purple";

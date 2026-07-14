@@ -990,39 +990,29 @@ console.log("Style Property Practice");
 
 let titleElement = document.querySelector("h1");
 
-titleElement.style.color = "blue";
-titleElement.style.backgroundColor = "lightyellow";
-titleElement.style.textAlign = "center";
-titleElement.style.fontSize = "40px";
-titleElement.style.border = "2px solid black";
-titleElement.style.padding = "10px";
-
-let firstParagraph = document.querySelector("p");
-
-firstParagraph.style.color = "green";
-firstParagraph.style.fontWeight = "bold";
-firstParagraph.style.fontSize = "20px";
+if (titleElement) {
+    titleElement.style.color = "blue";
+    titleElement.style.backgroundColor = "lightyellow";
+    titleElement.style.textAlign = "center";
+    titleElement.style.fontSize = "40px";
+    titleElement.style.border = "2px solid black";
+    titleElement.style.padding = "10px";
+}
 
 let actionButton = document.querySelector("button");
 
-actionButton.style.backgroundColor = "black";
-actionButton.style.color = "white";
-actionButton.style.padding = "10px 20px";
-actionButton.style.borderRadius = "8px";
-actionButton.style.cursor = "pointer";
-
+if (actionButton) {
+    actionButton.style.backgroundColor = "black";
+    actionButton.style.color = "white";
+    actionButton.style.padding = "10px 20px";
+    actionButton.style.borderRadius = "8px";
+    actionButton.style.cursor = "pointer";
+}
 let pageBody = document.querySelector("body");
 
 pageBody.style.backgroundColor = "#f5f5f5";
 
-console.log("Style Updated");let imageBox = document.querySelector("img");
-
-imageBox.style.width = "250px";
-imageBox.style.height = "250px";
-imageBox.style.borderRadius = "15px";
-imageBox.style.border = "4px solid purple";
-
-console.log("ClassList Practice");
+console.log("Style Updated");
 
 let headingBox = document.querySelector("h1");
 
@@ -1063,13 +1053,13 @@ console.log(pageHeading.parentElement);
 
 console.log(pageHeading.nextElementSibling);
 
-let pageBody = document.querySelector("body");
+let pageBodyy = document.querySelector("body");
 
-console.log(pageBody.firstElementChild);
+console.log(pageBodyy.firstElementChild);
 
-console.log(pageBody.lastElementChild);
+console.log(pageBodyy.lastElementChild);
 
-console.log(pageBody.children);
+console.log(pageBodyy.children);
 
 console.log("Create Heading");
 

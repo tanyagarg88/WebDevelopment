@@ -211,7 +211,7 @@ WebDevelopment
 │   ├── index.html
 │   └── style.css
 │
-├── starter js
+├── spiderman js
 │   ├── app.js
 │   ├── index.html
 │   └── style.css

@@ -60,3 +60,25 @@ h3.addEventListener("click",changecolor);
 div.addEventListener("click",changecolor);
 
 let input= document.querySelector("input");
+
+let moveBox = document.querySelector("input");
+
+moveBox.addEventListener("keydown", function (event) {
+
+    if (event.code === "ArrowUp") {
+        console.log("Moving Up");
+    }
+
+    else if (event.code === "ArrowDown") {
+        console.log("Moving Down");
+    }
+
+    else if (event.code === "ArrowLeft") {
+        console.log("Moving Left");
+    }
+
+    else if (event.code === "ArrowRight") {
+        console.log("Moving Right");
+    }
+
+});

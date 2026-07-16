@@ -224,6 +224,8 @@ WebDevelopment
 ├── style.css
 ├── style1.css
 └── style2.css
+|
+├──miniproject js
 ```
 
 # 🤝 Connect With Me

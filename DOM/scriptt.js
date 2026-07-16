@@ -48,3 +48,15 @@ function getRandomColor() {
     return color;
 
 }
+
+let h3 = document.querySelector("h3");
+let div = document.querySelector("div");
+
+function changecolor(){
+    console.dir(this.innerText);
+    this.style.backgroundColor ="blue";
+}
+h3.addEventListener("click",changecolor);
+div.addEventListener("click",changecolor);
+
+let input= document.querySelector("input");

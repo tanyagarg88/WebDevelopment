@@ -82,3 +82,38 @@ moveBox.addEventListener("keydown", function (event) {
     }
 
 });
+
+let form = document.querySelector("form");
+
+form.addEventListener("submit", function(){
+    event.preventDefault();
+
+    let inp = document.querySelector("input");
+    console.dir(inp);
+    console.log(inp.value);
+});
+
+let loginForm = document.querySelector("form");
+
+loginForm.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    let userEmail = document.querySelector("#email");
+    let userPassword = document.querySelector("#password");
+
+    console.log(userEmail.value);
+    console.log(userPassword.value);
+
+});
+
+let feedbackForm = document.querySelector("form");
+
+feedbackForm.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    console.log(this.elements.username.value);
+    console.log(this.elements.city.value);
+
+});

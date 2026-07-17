@@ -103,3 +103,84 @@ function changecolor(color,delay,nextColorChange){
 changecolor("red",1000,()=>{
     changecolor("blue",1000);   
 });
+
+let promise = new Promise((resolve, reject) => {
+    let random = Math.random();
+
+    if (random > 0.5) {
+        resolve("Success");
+    } else {
+        reject("Failure");
+    }
+});
+
+promise
+    .then((msg) => {
+        console.log(msg);
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+
+function fetchData() {
+
+    return new Promise((resolve, reject) => {
+
+        let internet = true;
+
+        setTimeout(() => {
+
+            if (internet) {
+                resolve({
+                    id: 101,
+                    name: "Tanya",
+                    role: "Frontend Developer"
+                });
+            } else {
+                reject("No Internet Connection");
+            }
+
+        }, 1500);
+
+    });
+
+}
+
+fetchData()
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+
+let p1 = Promise.resolve("HTML");
+let p2 = Promise.resolve("CSS");
+let p3 = Promise.resolve("JavaScript");
+
+Promise.all([p1, p2, p3])
+    .then((result) => {
+        console.log(result);
+    });
+
+    
+new Promise((resolve, reject) => {
+
+    let payment = true;
+
+    if (payment) {
+        resolve("Payment Successful");
+    } else {
+        reject("Payment Failed");
+    }
+
+})
+.then((msg) => {
+    console.log(msg);
+})
+.catch((err) => {
+    console.log(err);
+})
+.finally(() => {
+    console.log("Transaction Completed");
+});

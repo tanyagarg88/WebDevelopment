@@ -1,22 +1,22 @@
-// let div = document.querySelector("div");
-// let ul = document.querySelector("ul");
-// let lis = document.querySelectorAll("li");
+let div = document.querySelector("div");
+let ul = document.querySelector("ul");
+let lis = document.querySelectorAll("li");
 
-// div.addEventListener("click", function () {
-//     console.log("div was clicked");
-// });
+div.addEventListener("click", function () {
+    console.log("div was clicked");
+});
 
-// ul.addEventListener("click", function (event) {
-//     event.stopPropagation();
-//     console.log("ul was clicked");
-// });
+ul.addEventListener("click", function (event) {
+    event.stopPropagation();
+    console.log("ul was clicked");
+});
 
-// for (let li of lis) {
-//     li.addEventListener("click", function (event) {
-//         event.stopPropagation();
-//         console.log("li was clicked");
-//     });
-// }
+for (let li of lis) {
+    li.addEventListener("click", function (event) {
+        event.stopPropagation();
+        console.log("li was clicked");
+    });
+}
 
 let btn = document.querySelector("button");
 let ol = document.querySelector("ol");
@@ -94,11 +94,13 @@ console.log("HELLO TANYA MAM...");
 
 let p = document.querySelector("p");
 
-function changecolor(color,delay,nextColorChange){
-    setTimeout(()=>{
+function changecolor(color,delay,){
+    new Promise((resolve,reject)=>{
+        setTimeout(()=>{
           p.style.color = color;
-          if (nextColorChange)nextColorChange();
+          resolve("color changed");
     },delay);
+    });
 }
 changecolor("red",1000,()=>{
     changecolor("blue",1000);   
@@ -184,3 +186,7 @@ new Promise((resolve, reject) => {
 .finally(() => {
     console.log("Transaction Completed");
 });
+
+async function greet(){
+    return "hello";
+}

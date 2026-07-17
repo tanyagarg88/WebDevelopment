@@ -80,3 +80,26 @@ function three(){
     let ans = two()+one();
     console.log(ans);
 }
+
+setTimeout (() => {
+    console.log("TAnya GArg");
+},1000);
+setTimeout (() => {
+    console.log("Android developer");
+},2000);
+setTimeout (() => {
+    console.log("Web developer");
+},3000);
+console.log("HELLO TANYA MAM...");
+
+let p = document.querySelector("p");
+
+function changecolor(color,delay,nextColorChange){
+    setTimeout(()=>{
+          p.style.color = color;
+          if (nextColorChange)nextColorChange();
+    },delay);
+}
+changecolor("red",1000,()=>{
+    changecolor("blue",1000);   
+});

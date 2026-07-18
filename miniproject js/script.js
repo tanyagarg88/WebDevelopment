@@ -260,3 +260,64 @@ async function checkResult() {
 }
 
 checkResult();
+
+function hello() {
+    return new Promise((resolve, reject) => {
+        resolve("Hello Tanya");
+    });
+}
+
+async function greet() {
+
+    let result = await hello();
+
+    console.log(result);
+
+}
+greet();
+
+function first() {
+    return new Promise((resolve) => {
+        resolve("HTML");
+    });
+}
+
+function second() {
+    return new Promise((resolve) => {
+        resolve("CSS");
+    });
+}
+
+async function learn() {
+
+    let one = await first();
+    console.log(one);
+
+    let two = await second();
+    console.log(two);
+
+}
+
+learn();
+
+function myPromise() {
+
+    return new Promise((resolve, reject) => {
+
+        resolve("Success");
+
+        // reject("Error");
+
+    });
+
+}
+
+async function myFunction() {
+
+    let result = await myPromise();
+
+    console.log(result);
+
+}
+
+myFunction();

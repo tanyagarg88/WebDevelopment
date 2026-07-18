@@ -10,233 +10,150 @@
 
 ---
 
-# 👩‍💻 About Me
+👩‍💻 About Me
 
-Hi, I'm **Tanya Garg**, a Computer Science Engineering student passionate about **Frontend Development**, **Flutter**, and creating modern web applications.
+Hi, I'm Tanya Garg, a Computer Science Engineering student passionate about Frontend Development and creating responsive, interactive, and user-friendly web applications.
 
-This repository is my personal learning journal where I practice web development concepts, build mini projects, and improve my problem-solving skills through hands-on coding.
+This repository serves as my Web Development Learning Journey, where I regularly practice new concepts, build mini-projects, and strengthen my programming skills through hands-on coding.
 
-I'm currently learning:
+📚 Learning Progress
 
-- HTML5
-- CSS3
-- Bootstrap 5
-- JavaScript (ES6+)
+🌐 HTML5
+Semantic HTML
+Forms & Validation
+Tables
+Lists
+Audio & Video
+Images & Hyperlinks
 
-Upcoming:
+🎨 CSS3
+Selectors
+Box Model
+Typography
+Flexbox
+Positioning
+Responsive Design
+Transitions & Animations
+Hover Effects
 
-- React.js
-- Node.js
-- Express.js
-- MongoDB
+⚡ Bootstrap 5
+Containers
+Grid System
+Buttons
+Cards
+Navbar
+Forms
+Carousel
+Utilities
+Responsive Components
 
----
+💻 JavaScript (ES6+)
+Variables & Data Types
+Strings, Arrays & Objects
+Loops & Functions
+Arrow Functions
+Scope & Closures
+Higher Order Functions
+DOM Manipulation
+Event Handling
+Event Delegation
+Form Events
+Timers (setTimeout, setInterval)
+Error Handling (try...catch)
+Callback Functions
+Callback Hell
+Promises
+Promise Chaining
+Async / Await
 
-# 📚 Learning Progress
+📂 Projects
+🎵 Spotify Clone
 
-## ✅ HTML
+A responsive Spotify-inspired music interface built using HTML and CSS.
 
-- Semantic HTML
-- Forms
-- Tables
-- Lists
-- Audio & Video
-- Images
-- Hyperlinks
+Features
 
----
+Responsive Layout
+Sidebar Navigation
+Music Cards
+Fixed Music Player
+Dark Theme UI
+✅ Interactive Todo App
 
-## ✅ CSS
+A JavaScript-based Todo application using DOM Manipulation.
 
-- Selectors
-- Colors
-- Typography
-- Google Fonts
-- Font Awesome
-- Box Model
-- Positioning
-- Display Properties
-- Flexbox
-- Responsive Layout
-- Sidebar Navigation
-- Animations
-- Transitions
-- Hover Effects
+Features
 
----
+Add Tasks
+Delete Tasks
+Dynamic DOM Updates
+Event Delegation
+Input Validation
+🎲 Guessing Game
 
-## ✅ Bootstrap
+A simple JavaScript game based on random number generation.
 
-- Containers
-- Grid System
-- Buttons
-- Cards
-- Alerts
-- Navbar
-- Forms
-- Carousel
-- Utilities
-- Responsive Components
+Features
 
----
+Random Number Logic
+User Interaction
+Conditional Statements
+Looping Concepts
+📖 Sidebar Navigation
 
-## ✅ JavaScript
+A responsive sidebar project created using HTML and CSS.
 
-- Variables
-- Data Types
-- Operators
-- Strings
-- Arrays
-- Objects
-- Loops
-- Functions
-- Arrow Functions
-- Scope
-- Lexical Scope
-- Higher Order Functions
-- Methods
-- Objects & this Keyword
-- Math Object
-- Random Numbers
-- try...catch
-- Timers
-- Todo App
-- Guessing Game
+🧩 Bootstrap Components Showcase
 
----
+A practice project demonstrating commonly used Bootstrap components.
 
-# 📂 Projects
+🛠 Tech Stack
+HTML5
+CSS3
+Bootstrap 5
+JavaScript (ES6+)
+Git
+GitHub
+VS Code
+Google Fonts
+Font Awesome
 
-## 🎵 Spotify Clone
-
-A Spotify-inspired web interface built using HTML and CSS.
-
-### Features
-
-- Sidebar Navigation
-- Music Cards
-- Responsive Layout
-- Fixed Music Player
-- Dark Theme
-
----
-
-## 📋 JavaScript Todo App
-
-A simple console-based Todo application.
-
-### Features
-
-- Add Tasks
-- Delete Tasks
-- Display Tasks
-- Quit Application
-
----
-
-## 🎲 Guessing Game
-
-A simple JavaScript number guessing game using loops and conditions.
-
-### Features
-
-- Random Number Generation
-- User Input
-- Win/Lose Conditions
-
----
-
-## 📖 Sidebar Menu Project
-
-A responsive sidebar built using HTML and CSS.
-
-### Features
-
-- Sidebar Navigation
-- Font Awesome Icons
-- Google Fonts
-- Hover Effects
-- Responsive Layout
-
----
-
-## 🧩 Bootstrap Components Showcase
-
-Practice project demonstrating Bootstrap components.
-
-### Includes
-
-- Buttons
-- Cards
-- Alerts
-- Forms
-- Navbar
-- Grid System
-- Utilities
-
----
-
-# 🛠 Technologies Used
-
-- HTML5
-- CSS3
-- Bootstrap 5
-- JavaScript (ES6)
-- Google Fonts
-- Font Awesome
-- Git
-- GitHub
-- VS Code
-
----
-
-# 📁 Repository Structure
-
-```text
+📁 Repository Structure
 WebDevelopment
 │
-├── Bootstrap
-│   └── Bootstrap Components Showcase
-│
-├── JavaScript
-│   ├── index.html
-│   ├── script.js
-│   ├── todoapp.js
-│   ├── guessinggame.js
-│
-├── miniproject css
-│
-├── spotify
-│   ├── assets
-│   ├── index.html
-│   └── style.css
-│
-├── spiderman js
-│   ├── app.js
-│   ├── index.html
-│   └── style.css
-│
-├── README.md
-│
+├── Bootstrap/
+├── JavaScript/
+├── MiniProject CSS/
+├── MiniProject JS/
+├── Spotify/
+├── Spiderman JS/
 ├── index.html
-├── index1.html
-├── index2.html
 ├── style.css
-├── style1.css
-└── style2.css
-|
-├──miniproject js
-```
+└── README.md
 
-# 🤝 Connect With Me
+🎯 Future Learning Goals
+React.js
+Node.js
+Express.js
+MongoDB
+REST APIs
+Full Stack Development
+📈 Repository Highlights
+📚 Daily Learning & Practice
+💡 Hands-on Coding
+🎯 Mini Projects
+⚡ Modern JavaScript Concepts
+📱 Responsive Web Design
+🚀 Clean & Organized Code
 
-- GitHub: **github.com/tanyagarg88**
-- LinkedIn: **www.linkedin.com/in/tanya-garg-502845278**
+🤝 Connect With Me
+GitHub: https://github.com/tanyagarg88
+LinkedIn: https://www.linkedin.com/in/tanya-garg-502845278
 
----
+⭐ Support
 
-## ⭐ Support
+If you found this repository helpful or enjoyed exploring my learning journey, consider giving it a ⭐ Star.
 
-If you found this repository helpful or like my learning journey, feel free to **Star ⭐ this repository**.
+Every star motivates me to keep learning, building, and sharing more projects.
 
-Happy Coding! 🚀
+🚀 Happy Coding!

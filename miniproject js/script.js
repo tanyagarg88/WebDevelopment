@@ -190,3 +190,73 @@ new Promise((resolve, reject) => {
 async function greet(){
     return "hello";
 }
+
+function deliverBook() {
+
+    return new Promise((resolve, reject) => {
+
+        setTimeout(() => {
+            resolve("📚 Book Delivered");
+        }, 2000);
+
+    });
+
+}
+
+async function library() {
+
+    console.log("Book Ordered...");
+
+    let result = await deliverBook();
+
+    console.log(result);
+
+    console.log("Start Reading");
+
+}
+
+library();
+
+async function greeting() {
+
+    let message = await Promise.resolve("Good Morning!");
+
+    console.log(message);
+
+}
+
+greeting();
+
+function examResult() {
+
+    return new Promise((resolve, reject) => {
+
+        let passed = false;
+
+        if (passed) {
+            resolve("Congratulations! You Passed.");
+        } else {
+            reject("Better Luck Next Time.");
+        }
+
+    });
+
+}
+
+async function checkResult() {
+
+    try {
+
+        let result = await examResult();
+
+        console.log(result);
+
+    } catch (error) {
+
+        console.log(error);
+
+    }
+
+}
+
+checkResult();

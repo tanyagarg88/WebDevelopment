@@ -321,3 +321,48 @@ async function myFunction() {
 }
 
 myFunction();
+
+function checkAge(age) {
+
+    return new Promise((resolve, reject) => {
+
+        if (age >= 18) {
+            resolve("Eligible to Vote");
+        } else {
+            reject("Not Eligible");
+        }
+
+    });
+
+}
+
+checkAge(16)
+    .then((msg) => {
+        console.log(msg);
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+
+function uploadFile() {
+
+    return new Promise((resolve, reject) => {
+
+        setTimeout(() => {
+
+            reject("File Upload Failed");
+
+        }, 2000);
+
+    });
+
+}
+
+uploadFile()
+    .then((msg) => {
+        console.log(msg);
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+

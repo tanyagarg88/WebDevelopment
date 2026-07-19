@@ -366,3 +366,40 @@ uploadFile()
         console.log(err);
     });
 
+let jsonRes = '{"fact":"Cats step with both left legs, then both right legs when they walk or run.","length":74}';
+let validRes = JSON.parse(jsonRes);
+console.log(validRes.fact);
+
+async function getUser() {
+
+    let response = await fetch("https://jsonplaceholder.typicode.com/users/1");
+
+    let data = await response.json();
+
+    console.log(data);
+    console.log("Name:", data.name);
+    console.log("Email:", data.email);
+    console.log("City:", data.address.city);
+}
+
+getUser();
+
+async function getPost() {
+
+    try {
+
+        let response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+
+        let data = await response.json();
+
+        console.log(data);
+
+    } catch (error) {
+
+        console.log("Error:", error);
+
+    }
+
+}
+
+getPost();

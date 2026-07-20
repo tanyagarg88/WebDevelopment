@@ -424,3 +424,52 @@ console.log(games);const laptop = {
 console.log(laptop.brand);
 console.log(laptop.processor);
 console.log(laptop.price);
+
+const ticket = new Promise(function(resolve, reject) {
+
+    var booked = true;
+
+    if (booked) {
+        resolve("Ticket Confirmed");
+    } else {
+        reject("Booking Failed");
+    }
+
+});
+
+ticket
+    .then(function(message) {
+        console.log(message);
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
+
+const ticket = new Promise(function(resolve, reject) {
+
+    var booked = true;
+
+    if (booked) {
+        resolve("Ticket Confirmed");
+    } else {
+        reject("Booking Failed");
+    }
+
+});
+
+ticket
+    .then(function(message) {
+        console.log(message);
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
+
+async function loadTodo() {
+    const response = await fetch("https://jsonplaceholder.typicode.com/todos/5");
+    const result = await response.json();
+
+    console.log(result);
+}
+
+loadTodo();

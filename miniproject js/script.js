@@ -437,39 +437,12 @@ const ticket = new Promise(function(resolve, reject) {
 
 });
 
-ticket
-    .then(function(message) {
-        console.log(message);
-    })
-    .catch(function(error) {
-        console.log(error);
-    });
+let url = "https://catfact.ninja/fact";
 
-const ticket = new Promise(function(resolve, reject) {
-
-    var booked = true;
-
-    if (booked) {
-        resolve("Ticket Confirmed");
-    } else {
-        reject("Booking Failed");
-    }
-
-});
-
-ticket
-    .then(function(message) {
-        console.log(message);
-    })
-    .catch(function(error) {
-        console.log(error);
-    });
-
-async function loadTodo() {
-    const response = await fetch("https://jsonplaceholder.typicode.com/todos/5");
-    const result = await response.json();
-
-    console.log(result);
-}
-
-loadTodo();
+fetch(url)
+.then((res) => {
+    console.log(res);
+})
+.catch((error)=>{
+    console.log("ERROR-",err);
+})

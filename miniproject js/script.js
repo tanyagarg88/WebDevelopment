@@ -403,3 +403,24 @@ async function getPost() {
 }
 
 getPost();
+
+
+const games = ["Cricket", "Football", "Chess", "Hockey"];
+
+console.log(games);
+
+games.push("Badminton");
+games.pop();
+games.unshift("Tennis");
+games.shift();
+
+console.log(games);const laptop = {
+    brand: "Dell",
+    processor: "i7",
+    ram: "16GB",
+    price: 70000
+};
+
+console.log(laptop.brand);
+console.log(laptop.processor);
+console.log(laptop.price);

@@ -476,22 +476,60 @@ async function getFact(){
 }
 
 
-const bttn = document.querySelector("button");
-const para = document.querySelector("#fact");
+const button = document.querySelector("button");
+const image = document.querySelector("#catImage");
+const fact = document.querySelector("#fact");
 
-const url4 = "https://catfact.ninja/fact";
+const factUrl = "https://catfact.ninja/fact";
+const imageUrl = "https://api.thecatapi.com/v1/images/search";
 
-bttn.addEventListener("click", async () => {
-    const fact = await getFact();
-    para.innerText = fact;
+button.addEventListener("click", async () => {
+
+    const catFact = await getFact();
+    const catImage = await getImage();
+
+    fact.innerText = catFact;
+    image.src = catImage;
+
 });
 
 async function getFact() {
+
     try {
-        const res4 = await axios.get(url4);
-        return res4.data.fact;
-    } catch (e) {
-        console.log(e);
-        return "No fact found";
+
+        const response = await axios.get(factUrl);
+        return response.data.fact;
+
+    } catch (error) {
+
+        return "Unable to fetch cat fact.";
+
+    }
+
+}
+
+async function getImage() {
+
+    try {
+
+        const response = await axios.get(imageUrl);
+        return response.data[0].url;
+
+    } catch (error) {
+
+        return "https://via.placeholder.com/300";
+
+    }
+
+}
+
+let url5 = "https://universities.hipolabs.com/search?name=";
+let country = "nepal";
+async function getColleges(){
+    try{
+        let res = await axios.get(country+url);
+        console.log(res);
+    }catch(e){
+        console.log("ERROR",e);
     }
 }

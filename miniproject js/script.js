@@ -474,3 +474,24 @@ async function getFact(){
     console.log("error");
     }
 }
+
+
+const bttn = document.querySelector("button");
+const para = document.querySelector("#fact");
+
+const url4 = "https://catfact.ninja/fact";
+
+bttn.addEventListener("click", async () => {
+    const fact = await getFact();
+    para.innerText = fact;
+});
+
+async function getFact() {
+    try {
+        const res4 = await axios.get(url4);
+        return res4.data.fact;
+    } catch (e) {
+        console.log(e);
+        return "No fact found";
+    }
+}

@@ -457,3 +457,20 @@ fetch(url)
 .catch((error)=>{
     console.log("ERROR-",err);
 });
+
+
+let url1 = "https://icanhazdadjoke.com/";
+async function getFact(){
+    try{
+    let res = await fetch (url1);
+    let data =await res.json();
+    console.log(data.fact);
+
+    let res2 = await fetch (url1);
+    let data2 =await res.json();
+    console.log(data2.fact);
+
+    }catch(e){
+    console.log("error");
+    }
+}

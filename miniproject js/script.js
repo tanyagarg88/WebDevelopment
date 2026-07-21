@@ -533,3 +533,32 @@ async function getColleges(){
         console.log("ERROR",e);
     }
 }
+
+const butn = document.querySelector("button");
+const para = document.querySelector("#activity");
+
+const url6 = "https://bored-api.appbrewery.com/random";
+
+butn.addEventListener("click", async () => {
+
+    const activity = await getActivity();
+
+    para.innerText = activity;
+
+});
+
+async function getActivity() {
+
+    try {
+
+        const res = await axios.get(url6);
+
+        return res.data.activity;
+
+    } catch (error) {
+
+        return "No activity found.";
+
+    }
+
+}

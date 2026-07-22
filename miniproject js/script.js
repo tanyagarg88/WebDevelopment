@@ -562,3 +562,32 @@ async function getActivity() {
     }
 
 }
+const api = "https://jsonplaceholder.typicode.com/todos/3";
+
+async function getTodo() {
+
+    const response = await fetch(api);
+
+    const data = await response.json();
+
+    console.log(data.title);
+    console.log(data.completed);
+
+}
+
+getTodo();
+
+const api = "https://jsonplaceholder.typicode.com/posts/5";
+
+async function getPost() {
+
+    const response = await fetch(api);
+
+    const data = await response.json();
+
+    console.log(data.title);
+    console.log(data.body);
+
+}
+
+getPost();

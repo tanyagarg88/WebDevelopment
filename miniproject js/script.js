@@ -577,11 +577,11 @@ async function getTodo() {
 
 getTodo();
 
-const api = "https://jsonplaceholder.typicode.com/posts/5";
+const apii = "https://jsonplaceholder.typicode.com/posts/5";
 
 async function getPost() {
 
-    const response = await fetch(api);
+    const response = await fetch(apii);
 
     const data = await response.json();
 
@@ -591,3 +591,4 @@ async function getPost() {
 }
 
 getPost();
+

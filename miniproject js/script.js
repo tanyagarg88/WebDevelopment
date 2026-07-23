@@ -645,3 +645,38 @@ async function fetchUser() {
     }
 
 }
+
+
+const quoteButton = document.querySelector("button");
+
+const quoteText = document.querySelector("#quote");
+const authorName = document.querySelector("#author");
+
+const quoteApi = "https://dummyjson.com/quotes/random";
+
+quoteButton.addEventListener("click", async () => {
+
+    const quoteInfo = await fetchQuote();
+
+    quoteText.innerText = quoteInfo.quote;
+    authorName.innerText = "- " + quoteInfo.author;
+
+});
+
+async function fetchQuote() {
+
+    try {
+
+        const apiResponse = await fetch(quoteApi);
+
+        return await apiResponse.json();
+
+    }
+
+    catch(error) {
+
+        console.log(error);
+
+    }
+
+}

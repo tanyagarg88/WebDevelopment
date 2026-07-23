@@ -1,24 +1,11 @@
-# 🚀 Web Development Journey
-
-> A collection of my web development projects, practice exercises, and mini-projects while learning HTML, CSS, Bootstrap, and JavaScript.
-
-![GitHub last commit](https://img.shields.io/github/last-commit/tanyagarg88/WebDevelopment)
-![GitHub repo size](https://img.shields.io/github/repo-size/tanyagarg88/WebDevelopment)
-![GitHub stars](https://img.shields.io/github/stars/tanyagarg88/WebDevelopment?style=social)
-![GitHub forks](https://img.shields.io/github/forks/tanyagarg88/WebDevelopment?style=social)
-![Status](https://img.shields.io/badge/Status-Learning-success)
-
----
-
 👩‍💻 About Me
 
-Hi, I'm Tanya Garg, a Computer Science Engineering student passionate about Frontend Development and creating responsive, interactive, and user-friendly web applications.
+Hi, I'm Tanya Garg, a Computer Science Engineering student passionate about Frontend and Backend Development. I enjoy building responsive, interactive, and user-friendly web applications while continuously learning modern web technologies.
 
-This repository serves as my Web Development Learning Journey, where I regularly practice new concepts, build mini-projects, and strengthen my programming skills through hands-on coding.
+This repository documents my Web Development Journey, where I practice concepts, build mini-projects, experiment with new technologies, and strengthen my problem-solving skills through hands-on coding.
 
 📚 Learning Progress
-
-🌐 HTML5
+🌐 HTML5 ✅
 Semantic HTML
 Forms & Validation
 Tables
@@ -26,7 +13,7 @@ Lists
 Audio & Video
 Images & Hyperlinks
 
-🎨 CSS3
+🎨 CSS3 ✅
 Selectors
 Box Model
 Typography
@@ -36,37 +23,58 @@ Responsive Design
 Transitions & Animations
 Hover Effects
 
-⚡ Bootstrap 5
+⚡ Bootstrap 5 ✅
 Containers
 Grid System
-Buttons
-Cards
 Navbar
+Cards
 Forms
 Carousel
 Utilities
 Responsive Components
 
-💻 JavaScript (ES6+)
+💻 JavaScript (ES6+) ✅ Completed
 Variables & Data Types
-Strings, Arrays & Objects
-Loops & Functions
-Arrow Functions
+Operators
+Strings
+Arrays
+Objects
+Loops
+Functions
 Scope & Closures
+Arrow Functions
 Higher Order Functions
-DOM Manipulation
-Event Handling
-Event Delegation
-Form Events
-Timers (setTimeout, setInterval)
-Error Handling (try...catch)
 Callback Functions
 Callback Hell
 Promises
 Promise Chaining
 Async / Await
+JSON
+Fetch API
+Axios
+REST API Integration
+DOM Manipulation
+Event Handling
+Event Delegation
+Form Events
+Timers (setTimeout & setInterval)
+Error Handling (try...catch)
+
+⚙️ Backend Development 🚀 (Currently Learning)
+Node.js
+Express.js
+REST APIs
+HTTP Methods (GET, POST, PUT, DELETE)
+Routing
+Middleware
+Template Engines
+File System (FS Module)
+npm Packages
+Environment Variables
+API Development
 
 📂 Projects
+
 🎵 Spotify Clone
 
 A responsive Spotify-inspired music interface built using HTML and CSS.
@@ -80,7 +88,7 @@ Fixed Music Player
 Dark Theme UI
 ✅ Interactive Todo App
 
-A JavaScript-based Todo application using DOM Manipulation.
+A JavaScript Todo application built using DOM Manipulation.
 
 Features
 
@@ -91,69 +99,109 @@ Event Delegation
 Input Validation
 🎲 Guessing Game
 
-A simple JavaScript game based on random number generation.
+A JavaScript project based on random number generation.
 
 Features
 
 Random Number Logic
 User Interaction
+Loops
 Conditional Statements
-Looping Concepts
-📖 Sidebar Navigation
+🐱 Cat Facts Generator
 
-A responsive sidebar project created using HTML and CSS.
+A mini project using APIs and JavaScript.
 
+Features
+
+Fetch Random Cat Facts
+Async/Await
+Axios
+API Integration
+DOM Manipulation
+👤 Random User Generator
+
+A JavaScript project using REST APIs.
+
+Features
+
+Fetch API
+JSON Parsing
+Dynamic UI Updates
+Async/Await
 🧩 Bootstrap Components Showcase
 
-A practice project demonstrating commonly used Bootstrap components.
+A collection of commonly used Bootstrap components and layouts.
 
 🛠 Tech Stack
+Frontend
 HTML5
 CSS3
 Bootstrap 5
 JavaScript (ES6+)
+Backend
+Node.js
+Express.js
+Tools
 Git
 GitHub
 VS Code
+Postman
+npm
 Google Fonts
 Font Awesome
 
 📁 Repository Structure
-WebDevelopment
+WebDevelopment/
 │
 ├── Bootstrap/
+├── HTML/
+├── CSS/
 ├── JavaScript/
+├── Backend/
 ├── MiniProject CSS/
 ├── MiniProject JS/
 ├── Spotify/
 ├── Spiderman JS/
+├── API Practice/
 ├── index.html
 ├── style.css
+├── script.js
 └── README.md
 
-🎯 Future Learning Goals
-React.js
-Node.js
-Express.js
-MongoDB
-REST APIs
-Full Stack Development
+🎯 Current Goals
+✅ HTML
+✅ CSS
+✅ Bootstrap
+✅ JavaScript
+🚀 Backend Development
+🔜 MongoDB
+🔜 Authentication & Authorization
+🔜 React.js
+🔜 Full Stack Development
 📈 Repository Highlights
 📚 Daily Learning & Practice
 💡 Hands-on Coding
 🎯 Mini Projects
-⚡ Modern JavaScript Concepts
+🌐 API Integration
+⚡ Modern JavaScript
+🖥 Backend Fundamentals
 📱 Responsive Web Design
 🚀 Clean & Organized Code
-
+🔄 Regular Git Commits
 🤝 Connect With Me
-GitHub: https://github.com/tanyagarg88
-LinkedIn: https://www.linkedin.com/in/tanya-garg-502845278
+
+GitHub
+https://github.com/tanyagarg88
+
+LinkedIn
+https://www.linkedin.com/in/tanya-garg-502845278
 
 ⭐ Support
 
 If you found this repository helpful or enjoyed exploring my learning journey, consider giving it a ⭐ Star.
 
-Every star motivates me to keep learning, building, and sharing more projects.
+Your support motivates me to continue learning, building exciting projects, and sharing my progress with the developer community.
 
-🚀 Happy Coding!
+🚀 Thanks for Visiting!
+
+"Code. Learn. Build. Repeat." 💙

@@ -581,7 +581,7 @@ const apii = "https://jsonplaceholder.typicode.com/posts/5";
 
 async function getPost() {
 
-    const response = await fetch(apii);
+    const response = await fetch(api);
 
     const data = await response.json();
 
@@ -592,3 +592,23 @@ async function getPost() {
 
 getPost();
 
+const btton = document.querySelector("button");
+const joke = document.querySelector("#joke");
+
+const url7 = "https://official-joke-api.appspot.com/random_joke";
+
+btton.addEventListener("click", async () => {
+
+    const data = await getJoke();
+
+    joke.innerText = data.setup + " " + data.punchline;
+
+});
+
+async function getJoke() {
+
+    const response = await fetch(url7);
+
+    return await response.json();
+
+}

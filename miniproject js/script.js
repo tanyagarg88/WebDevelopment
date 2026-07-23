@@ -581,7 +581,7 @@ const apii = "https://jsonplaceholder.typicode.com/posts/5";
 
 async function getPost() {
 
-    const response = await fetch(api);
+    const response = await fetch(apii);
 
     const data = await response.json();
 
@@ -610,5 +610,38 @@ async function getJoke() {
     const response = await fetch(url7);
 
     return await response.json();
+
+}
+
+const userButton = document.querySelector("button");
+const userName = document.querySelector("#username");
+const userEmail = document.querySelector("#email");
+
+const apiLink = "https://randomuser.me/api/";
+
+userButton.addEventListener("click", async () => {
+
+    const person = await fetchUser();
+
+    userName.innerText = person.results[0].name.first;
+    userEmail.innerText = person.results[0].email;
+
+});
+
+async function fetchUser() {
+
+    try {
+
+        const serverReply = await fetch(apiLink);
+
+        return await serverReply.json();
+
+    }
+
+    catch(error) {
+
+        console.log(error);
+
+    }
 
 }

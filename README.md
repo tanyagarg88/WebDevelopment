@@ -76,7 +76,6 @@ API Development
 📂 Projects
 
 🎵 Spotify Clone
-
 A responsive Spotify-inspired music interface built using HTML and CSS.
 
 Features

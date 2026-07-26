@@ -699,3 +699,22 @@ async function getJoke4() {
         return "Unable to load joke.";
     }
 }
+let generate = document.querySelector("#generate");
+let dogImage = document.querySelector("#dogImage");
+
+let apikey = "https://dog.ceo/api/breeds/image/random";
+
+generate.addEventListener("click", async () => {
+    let image = await getDogImage();
+    dogImage.src = image;
+});
+
+async function getDogImage() {
+    try {
+        let response = await fetch(apikey);
+        let result = await response.json();
+        return result.message;
+    } catch (error) {
+        alert("Something went wrong");
+    }
+}

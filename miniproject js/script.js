@@ -680,3 +680,22 @@ async function fetchQuote() {
     }
 
 }
+let button4 = document.querySelector("#btn");
+let joke4 = document.querySelector("#joke");
+
+let urll = "https://v2.jokeapi.dev/joke/Programming?type=single";
+
+button4.addEventListener("click", async () => {
+    let data = await getJoke();
+    joke4.innerText = data;
+});
+
+async function getJoke4() {
+    try {
+        let response = await fetch(urll);
+        let result = await response.json();
+        return result.joke;
+    } catch (error) {
+        return "Unable to load joke.";
+    }
+}

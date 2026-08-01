@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+<main class="container">
+  <h1>Student Directory</h1>
+  <div class="student-grid">
+    <% students.forEach(student => { %>
+      <div class="student-card">
+        <h3><%= student.name %></h3>
+        <p><strong>Course:</strong> <%= student.course %></p>
+        <p><strong>Grade:</strong> <%= student.grade %></p>
+        <div class="card-actions">
+          <a href="/students/<%= student.id %>/edit" class="btn-edit">Edit</a>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</main>
+<%- include('partials/footer') %>
+
+
+<!-- Updated: 2026-08-01T10:44:07+05:30 [Commit #436] -->

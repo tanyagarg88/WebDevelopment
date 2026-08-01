@@ -1,0 +1,10 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #1e293b; margin: 0; }
+.main-nav { background: #1e293b; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+.brand { font-size: 1.25rem; font-weight: bold; color: #38bdf8; text-decoration: none; }
+.btn-new { background: #38bdf8; color: #0f172a; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: bold; }
+.container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+.student-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+.student-card { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-left: 4px solid #38bdf8; }
+
+
+<!-- Updated: 2026-08-01T13:08:50+05:30 [Commit #437] -->

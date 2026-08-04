@@ -60,7 +60,7 @@ Form Events
 Timers (setTimeout & setInterval)
 Error Handling (try...catch)
 
-⚙️ Backend Development 🚀 (Currently Learning)
+⚙️ Backend Development 🚀 (Currently Learning intermediate level)
 Node.js
 Express.js
 REST APIs

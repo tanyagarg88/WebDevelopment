@@ -6,9 +6,9 @@ const port =8080;
 app.set("view engine","ejs");
 
 app.get("/",(req,res)=>{
-    res.send("this is home");
+    res.render("home.ejs");
 });
 
 app.listen(port,()=>{
-    console.log('lsitening on port ${port}');
+    console.log('listening on port ${port}');
 });

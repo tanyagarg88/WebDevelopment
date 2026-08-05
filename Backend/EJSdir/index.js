@@ -15,8 +15,9 @@ app.get("/rolldice",(req,res)=>{
 });
 
 app.get("/ig/:username", (req, res) => {
-    let { username } = req.params;
-    res.render("instagram", { username });
+    let username = req.params.username;
+    const instaData =require("./data.json");
+    res.render("instagram.ejs", {data: instaData[username]});
 });
 
 app.listen(port,()=>{

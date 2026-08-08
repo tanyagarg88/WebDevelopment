@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS Practice Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<%
+let name = "Tanya Garg";
+
+let skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "EJS"
+];
+
+let students = [
+    {
+        name:"Tanya",
+        age:20,
+        city:"Ghaziabad",
+        verified:true,
+        marks:95
+    },
+    {
+        name:"Rahul",
+        age:22,
+        city:"Delhi",
+        verified:false,
+        marks:74
+    },
+    {
+        name:"Priya",
+        age:21,
+        city:"Noida",
+        verified:true,
+        marks:88
+    }
+];
+%>
+
+<h1>Welcome <%= name %> </h1>
+
+<h2>Today's Date</h2>
+
+<p><%= new Date().toDateString() %></p>
+
+<hr>
+
+<h2>Skills</h2>
+
+<ul>
+
+<% for(let skill of skills){ %>
+
+<li><%= skill %></li>
+
+<% } %>
+
+</ul>
+
+<hr>
+
+<h2>Student Dashboard</h2>
+
+<% students.forEach((student,index)=>{ %>
+
+<div class="<%= index % 2 === 0 ? 'card-one' : 'card-two' %>">
+
+<h3>
+
+<%= index + 1 %>. <%= student.name %>
+
+</h3>
+
+<p>Age : <%= student.age %></p>
+
+<p>City : <%= student.city %></p>
+
+<p>Marks : <%= student.marks %></p>
+
+<p>
+
+Status :
+
+<%= student.verified ? "Verified" : " Not Verified" %>
+
+</p>
+
+<% if(student.marks>=90){ %>
+
+<h4> Excellent Student</h4>
+
+<% } else if(student.marks>=75){ %>
+
+<h4> Good Student</h4>
+
+<% } else { %>
+
+<h4> Needs Improvement</h4>
+
+<% } %>
+
+<button>View Profile</button>
+
+</div>
+
+<br>
+
+<% }) %>
+
+<hr>
+
+<h2>Uppercase Skills</h2>
+
+<ul>
+
+<% skills.forEach(skill=>{ %>
+
+<li><%= skill.toUpperCase() %></li>
+
+<% }) %>
+
+</ul>
+
+<hr>
+
+<h2>First Three Skills</h2>
+
+<ul>
+
+<% for(let i=0;i<3;i++){ %>
+
+<li><%= skills[i] %></li>
+
+<% } %>
+
+</ul>

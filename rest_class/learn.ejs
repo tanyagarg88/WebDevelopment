@@ -426,4 +426,32 @@ let topStudents = students.filter(
 <% }) %>
 
 <hr>
+<nav>
+    <h2>My Website</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+</head>
+
+<body>
+
+    <%- include("partials/navbar") %>
+
+    <main>
+        <h1>Welcome to my website</h1>
+        <p>I am learning EJS and Express.</p>
+    </main>
+
+    <%- include("partials/footer") %>
+
+</body>
+</html>
 

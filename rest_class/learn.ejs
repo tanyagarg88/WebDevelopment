@@ -427,6 +427,8 @@ let topStudents = students.filter(
         <a href="/contact">Contact</a>
     </div>
 </nav>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -466,4 +468,41 @@ let topics = [
     </p>
 
 <% } %>
+
+<%
+let cart = [
+    {name: "Keyboard", price: 1500, quantity: 2},
+    {name: "Mouse", price: 800, quantity: 1},
+    {name: "Headphones", price: 2500, quantity: 1}
+];
+
+let subtotal = cart.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+);
+
+let discount = subtotal >= 5000 ? 500 : 0;
+
+let finalAmount = subtotal - discount;
+%>
+
+<h2>Shopping Cart</h2>
+
+<% cart.forEach(item => { %>
+
+    <p>
+        <%= item.name %>
+        × <%= item.quantity %>
+        = ₹<%= item.price * item.quantity %>
+    </p>
+
+<% }) %>
+
+<hr>
+
+<p>Subtotal: ₹<%= subtotal %></p>
+
+<p>Discount: ₹<%= discount %></p>
+
+<h3>Total: ₹<%= finalAmount %></h3>
 

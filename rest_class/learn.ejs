@@ -506,52 +506,141 @@ let finalAmount = subtotal - discount;
 
 <h3>Total: ₹<%= finalAmount %></h3>
 
-<%- include("partials/header", { title }) %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
 
-<section class="hero">
-    <h1>Available Products</h1>
-    <p>Manage and view your current product inventory.</p>
-</section>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 40px;
+        }
 
-<section class="product-grid">
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
 
-    <% products.forEach(product => { %>
+        .header {
+            background: #1f2937;
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
 
-        <article class="product-card">
+        .subjects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
 
-            <h2><%= product.name %></h2>
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
 
-            <p class="category">
-                Category: <%= product.category %>
-            </p>
+        .card h3 {
+            margin-top: 0;
+        }
 
-            <p class="price">
-                ₹<%= product.price.toLocaleString("en-IN") %>
-            </p>
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-            <% if (product.stock > 0) { %>
+        .pass {
+            color: green;
+        }
 
-                <p class="available">
-                    In Stock: <%= product.stock %>
+        .fail {
+            color: red;
+        }
+
+        .summary {
+            background: white;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Welcome, <%= student.name %>!</h1>
+        <p>Roll Number: <%= student.rollNo %></p>
+        <p>Course: <%= student.course %></p>
+    </div>
+
+    <h2>Subject Performance</h2>
+
+    <div class="subjects">
+
+        <% subjects.forEach(subject => { %>
+
+            <div class="card">
+
+                <h3><%= subject.name %></h3>
+
+                <p class="score">
+                    <%= subject.marks %> / 100
                 </p>
 
-                <button>Buy Now</button>
+                <% if (subject.marks >= 40) { %>
 
-            <% } else { %>
+                    <p class="pass">Status: Passed</p>
 
-                <p class="out-of-stock">
-                    Out of Stock
-                </p>
+                <% } else { %>
 
-                <button disabled>Unavailable</button>
+                    <p class="fail">Status: Failed</p>
 
-            <% } %>
+                <% } %>
 
-        </article>
+            </div>
 
-    <% }) %>
+        <% }) %>
 
-</section>
+    </div>
 
-<%- include("partials/footer") %>
+    <div class="summary">
+
+        <h2>Summary</h2>
+
+        <p>Total Subjects: <%= subjects.length %></p>
+
+        <p>Total Marks: <%= totalMarks %></p>
+
+        <p>Average Marks: <%= averageMarks.toFixed(2) %>%</p>
+
+        <% if (averageMarks >= 75) { %>
+
+            <p class="pass">Excellent Performance!</p>
+
+        <% } else if (averageMarks >= 40) { %>
+
+            <p>Keep improving your performance.</p>
+
+        <% } else { %>
+
+            <p class="fail">You need to work harder.</p>
+
+        <% } %>
+
+    </div>
+
+</div>
+
+</body>
+</html>
 

@@ -23,5 +23,3 @@ let getRandomUser = () => {
     password: faker.internet.password(),
   };
 }
-
-  console.log(getRandomUser());

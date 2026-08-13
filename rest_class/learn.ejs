@@ -506,3 +506,52 @@ let finalAmount = subtotal - discount;
 
 <h3>Total: ₹<%= finalAmount %></h3>
 
+<%- include("partials/header", { title }) %>
+
+<section class="hero">
+    <h1>Available Products</h1>
+    <p>Manage and view your current product inventory.</p>
+</section>
+
+<section class="product-grid">
+
+    <% products.forEach(product => { %>
+
+        <article class="product-card">
+
+            <h2><%= product.name %></h2>
+
+            <p class="category">
+                Category: <%= product.category %>
+            </p>
+
+            <p class="price">
+                ₹<%= product.price.toLocaleString("en-IN") %>
+            </p>
+
+            <% if (product.stock > 0) { %>
+
+                <p class="available">
+                    In Stock: <%= product.stock %>
+                </p>
+
+                <button>Buy Now</button>
+
+            <% } else { %>
+
+                <p class="out-of-stock">
+                    Out of Stock
+                </p>
+
+                <button disabled>Unavailable</button>
+
+            <% } %>
+
+        </article>
+
+    <% }) %>
+
+</section>
+
+<%- include("partials/footer") %>
+

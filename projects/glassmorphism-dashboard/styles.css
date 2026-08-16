@@ -1,0 +1,6 @@
+body { margin: 0; min-height: 100vh; display: flex; justify-content: center; align-items: center; background: radial-gradient(circle at 10% 20%, #4f46e5 0%, #06b6d4 90%); font-family: system-ui, sans-serif; }
+.glass-card { background: rgba(255, 255, 255, 0.18); backdrop-filter: blur(14px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 20px; padding: 2.5rem; text-align: center; color: white; width: 300px; }
+.stat-number { font-size: 3rem; font-weight: bold; margin: 0.5rem 0; }
+
+
+<!-- Updated: 2026-08-16T13:35:25+05:30 [August Series Commit #4] -->
